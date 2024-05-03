@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login as Admin</title>
+    <link rel="stylesheet" type="text/css" href="admin-login.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="15">
+
+</head>
+<link rel="shortcut icon" type="../image/x-icon" href="../assets/img/favicon.ico"/>
+<body>
+    <div id="back-button">
+        <button class="bck-btn"><a href="../index.html">Go Back to Home </a></button>
+    </div>
+    <img class="wave" src="../assets/img/logins/wave.png">
+    <div class="container">
+        <div class="img">
+            <img src="../assets/img/logins/vector_bg.png">
+        </div>
+        <div class="login-content">
+            <form action="index.html">
+                <img src="../assets/img/logins/avatar.png">
+                <h2 class="title"><i class="fas fa-key"></i> ADMIN LOGIN</h2>
+                <div class="input-div one">
+                   <div class="i">
+                        <i class="fas fa-user"></i>
+                   </div>
+                   <div class="div">
+                        <h5>Username</h5>
+                        <input type="text" id="username" class="input" autocomplete="off">
+                   </div>
+                </div>
+                <div class="input-div pass">
+                   <div class="i"> 
+                        <i class="fas fa-lock"></i>
+                   </div>
+                   <div class="div">
+                        <h5>Password</h5>
+                        <input type="password" id="password" class="input">
+                   </div>
+                </div>
+                <a href="no-password.html">Facing Login Errors?</a>
+                <input type="submit" class="btn" value="Login" onClick="auth(event)">
+            </form>
+        </div>
+    </div>
+<script type="text/javascript">
+/*Page*/
+
+    const inputs = document.querySelectorAll(".input");
+
+
+function addcl(){
+    let parent = this.parentNode.parentNode;
+    parent.classList.add("focus");
+}
+
+function remcl(){
+    let parent = this.parentNode.parentNode;
+    if(this.value == ""){
+        parent.classList.remove("focus");
+    }
+}
+
+
+inputs.forEach(input => {
+    input.addEventListener("focus", addcl);
+    input.addEventListener("blur", remcl);
+});
+
+/*Submit Login*/
+
+
+    function auth(event) {
+          event.preventDefault();
+
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+
+          if (username === "user@9ev" && password === "9ev09") {
+               window.open( 
+              "https://codesandbox.io/s/rex-14-by-t13-home-page-bt7fm?file=/index.html");
+          } else {
+              alert("Please enter valid information");
+              return;
+          }
+    }
+
+function auth(event) {
+  event.preventDefault();
+
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+
+  if (username.length === 0 || password.length === 0) {
+    alert("Username and password must not be empty!");
+    return;
+  } else if (username === "user@9ev" && password === "9ev09") {
+    window.open("https://codesandbox.io/s/rex-14-by-t13-home-page-bt7fm?file=/index.html", "_blank");
+  } else {
+    alert("Please enter valid information");
+    return;
+  }
+}
+</script>
+</body>
+
+
+
+</html>

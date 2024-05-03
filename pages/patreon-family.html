@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our Patreon Family</title>
+	  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<style type="text/css">
+*{
+
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  text-align: center;
+	background-color: #DEE6E1;
+}
+
+a {
+  color: #E7717D;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00cc95;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  padding: 30px;
+}
+
+.superb{
+font-family: "Raleway", sans-serif;
+  padding: 10px;
+}
+
+.list-type5{
+width:410px;
+margin:0 auto;
+}
+.list-type5 ol {
+list-style-type: none;
+list-style-type: decimal !ie; /*IE 7- hack*/
+margin: 0;
+margin-left: 1em;
+padding: 0;
+counter-reset: li-counter;
+}
+.list-type5 ol li{
+position: relative;
+margin-bottom: 1.5em;
+padding: 0.5em;
+background-color: #F0D756;
+padding-left: 58px;
+}
+
+.list-type5 a{
+text-decoration:none;
+color:black;
+font-size:15px;
+font-family: 'Raleway', sans-serif;
+}
+
+.list-type5 li:hover{
+box-shadow:inset -1em 0 #6CD6CC;
+-webkit-transition: box-shadow 0.5s; /* For Safari 3.1 to 6.0 */
+transition: box-shadow 0.5s;
+}
+
+.list-type5 ol li:before {
+position: absolute;
+top: -0.3em;
+left: -0.5em;
+width: 1.8em;
+height: 1.2em;
+font-size: 2em;
+line-height: 1.2;
+font-weight: bold;
+text-align: center;
+color: white;
+background-color: #6CD6CC;
+transform: rotate(-20deg);
+-ms-transform: rotate(-20deg);
+-webkit-transform: rotate(-20deg);
+z-index: 99;
+overflow: hidden;
+content: counter(li-counter);
+counter-increment: li-counter;
+}
+
+/*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+.cta {
+  background-image: url('../assets/img/cta-bg.jpg');
+  background-size: cover;
+  padding: 60px 0;
+  color: black; 
+}
+
+.cta h3 {
+  color: black;
+  font-size: 28px;
+  font-weight: 700;
+  color: black;
+}
+
+.cta p {
+  color: white;
+  background-color: grey;
+    font-size: 28px;
+  font-weight: 700;
+
+}
+
+.cta .cta-btn {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: black;
+}
+
+.cta .cta-btn:hover {
+  background: #E74C3C;
+  border: 2px solid #E7717D;
+}
+
+/*List Animation*/
+
+.list {
+  display: block;
+  width: 50%;
+  margin-left: 25%;
+  padding: 0;
+}
+
+.name {
+  list-style-type: none;
+  padding: 0.5em;
+  margin: 0;
+}
+
+ul li:nth-child(odd) {
+  background-color: darkgrey;
+}
+li{
+    -webkit-animation: staff 3s;
+  -webkit-animation-iteration-count: 2;
+  animation: staff 3s;
+  animation-iteration-count: 2;
+}
+// Keyframe animation
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    right: 100px;
+  }
+  75% {
+    opacity: 0.5;
+    right: 0px;
+  }
+  100% {
+    opacity: 1;
+  }
+/*VIP PATRONS*/
+
+#vip	ol {
+  display: inline-block;
+	counter-reset: counting-dude;
+}
+#vip li {
+  list-style-type: none;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+#vip  li:before {
+	content: counter(counting-dude);
+	counter-increment: counting-dude;
+  display: inline-block;
+  margin-right: 1em;
+  padding: 5px;
+  border-radius: 5px 0 0 10px;
+  background: #00ff00;
+  box-shadow: -1px -1px 5px 2px #888,
+              inset 2px 2px 2px #000;
+  color: #fff;
+}
+
+
+
+
+
+/*FOOTER*/
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  color: #444444;
+  font-size: 14px;
+  background: #f1f0f2;
+}
+
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+  background: #f9f8f9;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h4 {
+  font-size: 22px;
+  margin: 0 0 30px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+#footer .footer-top .footer-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #777777;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444444;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #E74C3C;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #777777;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  text-decoration: none;
+  color: #E7717D;
+}
+
+#footer .footer-newsletter {
+  font-size: 15px;
+}
+
+#footer .footer-newsletter h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444444;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+
+
+#footer .credits {
+  padding-top: 5px;
+  font-size: 13px;
+  color: #444444;
+}
+
+#footer .credits:hover {
+  color: #D52F1E;
+}
+
+.licensing a {
+  color: #E7717D;
+}
+
+.licensing a:hover {
+  color: #D52F1E;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #E74C3C;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 88px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #D52F1E;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*Back to Home Button*/
+  
+
+    
+
+	</style>
+</head>
+<body>
+
+
+	<h1>We currently don't have any Patrons yet !</h1>
+		<h3>Support me by giving as low as 1$ and get featured in a list here!<br>Superb Patrons are featured at the top👑</h3>
+	<h1 class="superb">Our Superb Patrons 👑 :</h1>
+<!-- Exercise and idea from: https://www.formget.com/css-lists/ -->
+
+<div class="list-type5">
+<ol>
+<li><a href="#">Name 1</a></li>
+<li><a href="#">Name 2</a></li>
+
+</ol>
+</div>
+
+<section>
+	<h4>The Grey Ones are our VIP Patrons and the non-grey ones are Thanksgiving Patrons⭐</h4>
+<ul class="list">
+  <li class="name">Name 0</li>
+  <li class="name">Name 1</li>
+  <li class="name">Name 2</li>
+  <li class="name">Name 3</li>
+  <li class="name">Name 4</li>
+  <li class="name">Name 5</li>
+  <li class="name">Name 6</li>
+  <li class="name">Name 7</li>
+  <li class="name">Name 8</li>
+  <li class="name">Name 9</li>
+</ul>
+</section>	
+
+
+
+
+	    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="text-center" data-aos="zoom-in">
+          <h3>Liking my work and effort?</h3>
+          <p>Encourage my effort on Patreon by donating as low as 1$!</p>
+          <a class="cta-btn" href="https://www.patreon.com/mrkumli" target="_blank">Support me on Patreon</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+
+
+<section id="vip">
+	<h1>Tipping Patrons:</h1>
+
+<ol>
+  <li>Name 1</li>
+  <li>Name 2</li>
+  <li>Name 3</li>
+  <li>Name 4</li>
+  <li>Name 5</li>
+  <li>Name 6 </li>
+</ol>
+
+<br>
+<br>
+<button class="text-center" data-aos="zoom-in"><a href="../index.html">
+  <span>Head back to Home Page</span>
+</a></button>
+<br>
+<br>
+<br>
+
+
+</section>
+
+</body>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright 2020-2021 <strong><span> Rex 14</span></strong>.<br> All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          Design inspired by templates from: <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+        <div class="licensing">
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Licensing:</h4>
+          </div>
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0 height: 120px; width: 120px;" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-nd.eu.png" /></a><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>
+        </div>
+      </div>  </footer><!-- End Footer -->
+
+
+<script type="text/javascript">
+
+</script>
+
+</html>

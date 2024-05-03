@@ -1,0 +1,105 @@
+/** testimonial **/
+ .testimonial {
+     background: #fff;
+     margin-top: 85px;
+}
+ .titlepage {
+    text-align: center;
+     padding-bottom: 10px;
+}
+ .titlepage h2 {
+     padding: 0;
+     font-weight: 500;
+     color: #000;
+     line-height: 55px;
+     font-size: 50px;
+}
+ .testimonial_box {
+    text-align: center;
+}
+ .testimonial_box figure {
+    margin: 0;
+}
+.testimonial_box .mid_pic {
+     height: 150px;
+     width: 180px;
+}
+.testimonial_box .side_pic {
+     height: 110px;
+     width: 110px;
+}
+ .box {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     text-align: center;
+}
+ .testimonial .clients_box {
+     text-align: center;
+}
+ .testimonial .clients_box {
+     border-radius: 20px;
+     text-align: center;
+}
+ .testimonial .clients_box h3 {
+     padding-top: 20px;
+     font-size: 29px;
+     line-height: 30px;
+     color: #000;
+     font-weight: 500;
+     border-bottom: #000 solid 1px;
+     width: 104px;
+     display: inline;
+     padding-bottom: 5px;
+     margin-bottom: 15px;
+}
+ .testimonial .clients_box p {
+     padding-top: 10px;
+     color: #000;
+     font-size: 17px;
+     line-height: 27px;
+     font-weight: 400;
+     color: #1a1a1b;
+}
+ .testimonial .clients_box span {
+     color: #6e6e6e;
+     font-size: 16px;
+     padding-bottom: 5px;
+     display: inline-block;
+}
+.testimonial .clients_box .ownership p {
+     font-family: 'Roboto', sans-serif;
+
+}
+/** end testimonial **/
+/** footer **/
+ .footer {
+     background: #181716;
+     padding-top: 90px;
+     margin-top: 90px;
+}
+ .footer h2 {
+    color: #fff;
+     font-size: 40px;
+     line-height: 40px;
+     text-align: center;
+}
+
+ .copyright {
+     padding: 20px 0px;
+     margin-top: 55px;
+     background-color: #EEEEEE ;
+}
+ .copyright p {
+     color: #000;
+     font-size: 18px;
+     line-height: 22px;
+     text-align: center;
+}
+ .copyright a {
+     color: #000;
+}
+ .copyright a:hover {
+     color: #f00;
+}
+/** end footer **/
